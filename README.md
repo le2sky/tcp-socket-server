@@ -1,4 +1,4 @@
-# Tcp-Socket-Server
+# Tcp-Socket-Server Project
 
 <img src="tcp-project-logo.png">
 
