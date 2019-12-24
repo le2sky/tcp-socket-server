@@ -15,7 +15,7 @@
 `$ apt install telnet ` <br>
 `$ apt install gcc `
 
-## 1. tcp-echo-server.c ##
+## 1. tcp-echo-server.c
 ***On the server side,***
  - **First**, compile the file into an object file.<br>
 `$ gcc -o tcp_echo_server tcp_echo_server.c`
