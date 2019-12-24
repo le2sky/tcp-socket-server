@@ -1,7 +1,7 @@
 # Tcp-Socket-Server
-<br><br>
-**목차**
-1. 기존 server의 한계점 : 기존 source 참고
-2. 해결방안 : 멀티프로세싱, 멀티쓰레딩
-3. 멀티쓰레딩을 이용한 tcp 채팅서버 구현
+1. I worked in a **WSL(Windows Subsystem for Linux) Ubuntu 18.04 environment**. and I edited with **Visual Studio code Editor**.<br>
+2. **It was a my university class**, then i wanna remember how to make socket server with c-lang<br>
+3. but it is a reallllllly simple socket server, so I think, It is working in only local network -> ***maybe will wrong thing*** <br>
+<br>
 
+## 1. Tcp-echo-server.c ##
