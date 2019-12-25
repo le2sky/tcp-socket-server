@@ -15,7 +15,7 @@
 `$ apt install telnet ` <br>
 `$ apt install gcc `
 
-## 1. tcp-echo-server.c
+## 1. tcp_echo_server.c
 ***On the server side,***
  - **First**, compile the file into an object file.<br>
 `$ gcc -o tcp_echo_server tcp_echo_server.c`
@@ -49,3 +49,24 @@
  **So, this project will build a chat server after implementing multiprocessing and multithreading**<br>
  (Yes! That's the ultimate goal of this project)
  
+## 2. tcp_echo_fork_server.c
+
+***On the server side,***
+ - **First**, compile the file into an object file.<br>
+`$ gcc -o tcp_echo_fork_server tcp_echo_fork_server.c`
+
+ - **Second**, Run the executable file.<br>
+`$ ./tcp_echo_fork_server`
+<br>
+
+***On the client side,***
+ - you can do as you did in the tcp_echo_server.c file.
+<br>
+
+#### what is `fork()` ?
+- ***In short, the fork () function duplicates the current process.*** (Register, stack, code, data, heap, resources, etc.)
+- `fork()` return value is **zero** for the child process and **pid value of the child process** for the parent process. 
+- In other words, **we define the behavior of the parent and child separately**, depending on the return value of fork.
+- So the **parent process accepts the connection**, clones the process, and then the **child process handles the logic.**
+- Now we have implemented multiprocessing using `fork()`
+<hr>
