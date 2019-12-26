@@ -72,5 +72,21 @@
 <hr>
 
 ## 3. tcp_echo_thread_server.c
+***On the server side,***
+ - **First**, compile the file into an object file.<br>
+`$ gcc -o tcp_echo_thread_server tcp_echo_thread_server.c -lpthread`
 
- - comming soon.
+ - **Second**, Run the executable file.<br>
+`$ ./tcp_echo_thread_server`
+<br>
+
+***On the client side,***
+ - you can do as you did in the tcp_echo_server.c file.
+<br>
+
+#### what is thread?
+ - **Threads are a lightweight process** and can be parallelized as fork() does.
+ - It is lightweight process in functions unit.
+ - In other words, **a minimal environment (stack, register)** is required to execute a function independently.
+ - Instead of copying all process resources like fork(), **it only copies a specific area** (contextually a minimal environment).
+ - Thus, except for certain areas, **the process resources are shared by all threads.**
