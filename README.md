@@ -90,3 +90,4 @@
  - In other words, **a minimal environment (stack, register)** is required to execute a function independently.
  - Instead of copying all process resources like fork(), **it only copies a specific area** (contextually a minimal environment).
  - Thus, except for certain areas, **the process resources are shared by all threads.**
+   - It is less expensive than copying all process resources.
