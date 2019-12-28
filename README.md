@@ -37,7 +37,7 @@
  - source
  - firewall
  - Socket Status <br> 
- `netstat -ant | grep PORT`
+ `$ netstat -ant | grep PORT`
  - faith
 
 **So, if we can output words entered by one client to another client, we can implement a chat server**. <br>
